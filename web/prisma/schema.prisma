@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:karthick@1@localhost:5432/referral-affiliate?schema=public"
+}
+
+model influencer {
+    id String @id @default(uuid())
+    name String 
+    email String
+    tags String[]
+}
+
+model affiliate{
+   id String @id @default(uuid())
+   campaign_name String
+   campaign_type String
+   promoted_product String
+   date String
+   Time String
+   offer_name String
+   commission_type String
+   value String
+   customer_discount String
+   influencer_name String
+   offer String
+   create_date DateTime @default(now())
+}
+
+model pricerule{
+  id String @id @default(uuid())
+   pricerule_name String
+   discount_code String
+   discount_type String
+   value String
+   start_date String
+   end_date String
+   activate Boolean
+}
+model advocate{
+  id String @id @default(uuid())
+   advocate_name String
+   discount_code String
+   discount_type String
+   value String
+   start_date String
+   end_date String
+   activate Boolean
+}
+model members{
+   id String @id @default(uuid())
+   name String
+   email String @unique
+   link String
+   enable Boolean
+   setting String
+   get_discount Boolean @default(false)
+}
+model customers{
+   id String @id @default(uuid())
+   name String
+   email String @unique
+   customer_id String @unique
+}
+model referrals{
+   id String @id @default(uuid())
+   advocate_id String
+   referral_email String @unique
+   discount_code String @unique
+}
+
+//npx prisma generate
+//npx prisma migrate dev --name init --create-only
+//npx prisma migrate deploy

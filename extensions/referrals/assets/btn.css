@@ -1,0 +1,135 @@
+#container{
+    width: 370px;
+    height: 250px;
+    visibility:hidden;
+    border-radius: 20px;
+    background-color:white;
+    color:#000000;
+    position: fixed; 
+    bottom:50px;
+    right:50px;
+    box-shadow: 5px 5px 15px #645f5f;
+}
+
+#title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    color:#000000;
+}
+#des{
+    margin-left: 10px;
+}
+#text{
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 5px;
+    outline: none;
+    border: 2px solid #000000;
+}
+#button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color:#000000;
+    color:white;
+}
+
+#btn{
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color:#000000;
+    color:white;
+    position: fixed; 
+    bottom:30px;
+    right:30px;
+}
+#closebtn{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    margin-left: 10px;
+    background-color:#000000;
+    color:white;
+    position: fixed; 
+    bottom:10px;
+    right:10px;
+    visibility: hidden;
+    font-size: 30px;
+}
+
+/*    popup */
+#popup-container{
+    width: 500px;
+    height: 370px;
+    visibility:hidden;
+    border-radius: 20px;
+    background-color:white;
+    color:#000000;
+    position: fixed; 
+    top:150px;
+    left:400px;
+    z-index:5;
+    box-shadow: 5px 5px 15px #645f5f;
+}
+#closepopup{
+    font-size: 30px;
+    align-items:start;
+    background-color: rgb(224, 79, 79);
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+#code{
+    width: 330px;
+    height: 35px;
+    border-radius: 10px;
+     margin-left: 35px;
+    outline: none;
+    text-align: center;
+    border: 2px solid #000000;
+}
+#inner-container{
+    display: inline-block;
+    margin-left: 20px;
+}
+#get{
+    width: 100px;
+    height: 35px;
+    background-color:#000000;
+    color: white;
+    border-radius: 10px;
+}
+#next-btn{
+    width: 350px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 55px;
+    background-color:#000000;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+}
+#next-btn #a{
+text-decoration: none;
+color: white;
+}
+
+#popup-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    color:#000000;
+}
+#popup-des{
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color:#000000;
+}

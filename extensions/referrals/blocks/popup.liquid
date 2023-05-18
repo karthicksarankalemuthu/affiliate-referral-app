@@ -1,0 +1,28 @@
+
+{% if request.path == "/collections/all" %}
+  
+  <div id="popup-container">
+    <button id="closepopup" >&times;</button>
+    <p id="popup-title">🎉 You Got & Offer</p>
+    <h3 id="popup-des">Congrats! Your friend has given you a coupon.</h3>
+    <div id="inner-container">
+    <input type="text" placeholder="enter the email" id="code" />
+  <button  id="get" >Get coupon</button>
+</div>
+  <button  id="next-btn" ><a id="a"href="https://referral-affiliate-app.myshopify.com/collections/all">shop now</a></button>
+  </div>
+{% else %}
+<span></span>
+{% endif %}
+
+  {% schema %}
+    {
+      "name": "popup",
+      "target": "body",
+      "stylesheet": "btn.css",
+      "javascript": "btn.js",
+      "settings": []
+    }
+  {% endschema %}
+
+  
